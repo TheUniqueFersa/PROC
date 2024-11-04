@@ -7,14 +7,13 @@
 using namespace std;
 typedef pair<int, int> pi;
 typedef vector<int> vi;
-typedef vector<pi> vpi;
 typedef vector<vi> vii;
-typedef vector<vpi> vvpi;
+typedef vector<vector<pi>> vvpi;
 
 void solve() {
-    int n;
-    cin >> n;
-    printf("Apoco si");
+    ll L, N, M;
+    cin >> L >> N >> M;
+    
 }
 
 int main() {
