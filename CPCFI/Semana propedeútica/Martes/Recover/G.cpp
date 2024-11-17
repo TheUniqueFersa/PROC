@@ -22,7 +22,7 @@ string print_n_s(string s, int n){
 }
 
 void solve() {
-    ll int n;
+    ll n;
     cin >> n;
     // cout << "codeforces";
     // string str(n, 's');
