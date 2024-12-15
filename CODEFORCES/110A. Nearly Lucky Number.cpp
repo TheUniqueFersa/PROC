@@ -32,24 +32,25 @@ void setIO() {
 
 void solve() {
     ll n;
-    int k;
-    cin >> n >> k;
-    fori(i, 0, k){
-        if(n%10 == 0){
-            n /= 10;
-        } else {
-            n--;
+    cin >> n;
+    int m=0;
+    string s = to_string(n);
+    fori(i, 0, s.size()) {
+        if(s[i] == '4'||s[i] == '7') m++;
+    }
+    s = to_string(m);
+    fori(i, 0, sz(s)){
+        if(s[i] != '4' && s[i] != '7'){
+            cout << "NO";
+            return;
         }
     }
-    cout << n << endl;
-
+    cout << "YES";
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }
