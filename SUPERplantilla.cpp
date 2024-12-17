@@ -17,19 +17,21 @@ typedef vector<vii> vvii;
 #define rall(v) v.rbegin(),v.rend()
 #define sz(a) (int)(a.size())
 #define fori(i,a,n) for(int i = a; i < n; i++)
+#define in(v) for(auto &x : v) cin >> x;
+#define out(v) for(auto x : v) cout << x << " "; cout<<endl;
 #define endl '\n'
 const int MOD = 1e9+7;
 const int INF = INT_MAX;
 const long long LLINF = LLONG_MAX;
 const double EPS = 1e-9;
-
+/*
 void setIO() {
     #ifndef ONLINE_JUDGE
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     #endif
 }
-
+*/
 void solve() {
 
 }
