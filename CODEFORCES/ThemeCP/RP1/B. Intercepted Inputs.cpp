@@ -38,7 +38,7 @@ void setIO() {
 }
 */
 void solve() {
-    int k, c_1=0, c_x=0, n_1=-1, n_x=-1;
+    int k;
     cin >> k;
     // vi a(k);
     int r = k-2;
@@ -63,7 +63,7 @@ void solve() {
                     cout << each << " " << eachh<<endl;
                     return;
                 }
-                cout << each << " " << eachh<<endl;
+                cout << each << " " << eachh<<endl; //parte fragil del código. Pudo tener corección, pero el problema pasó de todos modos
                 return;
             }
             
