@@ -46,6 +46,8 @@ void solve() {
     }
     out(c);
     */
+
+   //This implementation worked :)
     while (i < a.size() || j < b.size())
         if (j == b.size() || i < a.size() && a[i] < b[j]){
             i++;
