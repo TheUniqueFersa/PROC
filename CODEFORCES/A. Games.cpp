@@ -1,6 +1,7 @@
 /*
+    A. Games
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    aprox 4 min | 06/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,25 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n;
+    cin >> n;
+    vii a(n); 
+    fori(i, 0, n){
+        cin >> a[i].F >> a[i].S;
+    }
+    int res = 0;
+    fori(i, 0, n){
+        fori(j, 0, n){
+            if(i != j) 
+                if(a[i].F == a[j].S) res ++;
+        }
+    }
+    cout << res << endl;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

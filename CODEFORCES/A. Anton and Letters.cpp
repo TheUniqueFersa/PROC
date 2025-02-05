@@ -1,7 +1,4 @@
-/*
- - theuniqueFersa: YI!!
-    timeToSolve | date
-*/
+// 00:06:51 | 02/01/2025
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
@@ -37,14 +34,18 @@ void setIO() {
 }
 */
 void solve() {
-
+    string s;
+    getline(cin, s);
+    set<char> ss;
+    fori(i, 0, sz(s)){
+        if(s[i] >= 97 && s[i] <= 122) ss.insert(s[i]);
+    }
+    cout << sz(ss) << endl;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

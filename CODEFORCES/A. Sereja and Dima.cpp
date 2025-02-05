@@ -1,6 +1,7 @@
 /*
+    A. Sereja and Dima
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:10:01 | 16/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,27 @@ void setIO() {
 }
 */
 void solve() {
-
+    int a[2] = {0,0};
+    int n;
+    cin >> n;
+    int i = 0, j = n-1;
+    vi b(n); in(b);
+    fori(m, 1, n+1){
+        int x = (m%2==0)? 1:0;
+        if(b[i] > b[j]){
+            a[x] += b[i];
+            i++;
+        } else {
+            a[x] += b[j];
+            j--;
+        }
+    }
+    cout << a[0] << " " << a[1] << endl;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

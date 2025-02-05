@@ -1,6 +1,7 @@
 /*
+    A. Sum of Round Numbers
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:14:13 | 05/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,7 +38,23 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n;
+    cin >> n;
+    stack<int> s;
+    for(int i = 5; i >= 0; i--){
+        int p = pow(10, i);
+        float x = n/p;
+        if(x >= 1){
+            s.push(x*p);
+            n -= x*p;
+        }
+    }
+    cout << s.size() << endl;
+    while(!s.empty()){
+        cout << s.top() << " ";
+        s.pop();
+    }
+    cout << endl;
 }
 
 int main() {

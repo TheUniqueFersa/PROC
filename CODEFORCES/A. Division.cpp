@@ -1,6 +1,7 @@
 /*
+    1669A
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:05:26 | 21/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,7 +38,14 @@ void setIO() {
 }
 */
 void solve() {
-
+    int rating;
+    cin >> rating;
+    cout << "Division ";
+    if(rating>=1900) cout << "1";
+    else if(1600<=rating && rating <= 1899) cout << "2";
+    else if(1400<=rating && rating<=1599) cout << "3";
+    else if(rating<=1399) cout << "4";
+    cout << endl;
 }
 
 int main() {

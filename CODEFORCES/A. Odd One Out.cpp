@@ -1,6 +1,7 @@
 /*
+    1915/A
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:02:35 | 27/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,7 +38,12 @@ void setIO() {
 }
 */
 void solve() {
-
+    int A,b,c;
+    cin>>A>>b>>c;
+    vi a = {A,b,c};
+    sort(all(a));
+    if(a[1] == a[0]) cout << a[2] << endl;
+    else cout << a[0] << endl;
 }
 
 int main() {

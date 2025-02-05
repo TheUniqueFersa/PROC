@@ -1,6 +1,7 @@
 /*
+    A. Marathon
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:04:16 | 18/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,7 +38,13 @@ void setIO() {
 }
 */
 void solve() {
-
+    vi a(4);
+    cin >>a[0]>>a[1]>>a[2]>>a[3];
+    int res = 0;
+    fori(i, 1, 4){
+        if(a[i] > a[0]) res++;
+    }
+    cout << res << endl;
 }
 
 int main() {

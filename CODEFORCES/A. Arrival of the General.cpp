@@ -1,7 +1,3 @@
-/*
- - theuniqueFersa: YI!!
-    timeToSolve | date
-*/
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
@@ -37,14 +33,35 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n; 
+    cin >> n;
+    vi v(n); in(v);
+    ii mini = {INF,0}, maxi = {0,0};
+    fori(i, 0, n){
+        if(v[i] > maxi.F){
+            maxi.F = v[i];
+            maxi.S = i;
+        }
+    }
+    for(int i = n - 1; i >= 0; i--){
+        if(v[i] < mini.F){
+            mini.F = v[i];
+            mini.S = i;
+        }
+    }
+    // if(maxi.S == 0 && mini.S == n-1) {
+    //     cout << 0 << endl;
+    //     return;
+    // }
+    // cout << mini.S << " " << maxi.S;
+    int res = (maxi.S) + ((n - mini.S) - 1);
+    if(mini.S < maxi.S) res--;
+    cout << res;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

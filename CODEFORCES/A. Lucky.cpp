@@ -1,7 +1,3 @@
-/*
- - theuniqueFersa: YI!!
-    timeToSolve | date
-*/
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
@@ -36,8 +32,14 @@ void setIO() {
     #endif
 }
 */
+int t(char s){
+    return s-'0';
+}
 void solve() {
-
+    string s;
+    cin >> s;
+    if(t(s[0]) + t(s[1]) + t(s[2]) == t(s[3]) + t(s[4]) + t(s[5])) cout << "YES" << endl;
+    else cout << "NO" << endl;
 }
 
 int main() {

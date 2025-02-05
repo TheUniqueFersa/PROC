@@ -1,6 +1,7 @@
 /*
+    1560/A
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:10:25 | 24/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -36,13 +37,25 @@ void setIO() {
     #endif
 }
 */
+int upm = 3000;
+vi a;
 void solve() {
-
+    int K;
+    cin >> K;
+    cout << a[K-1] << endl;
+}
+void fill(){
+    fori(i, 0, upm){
+        int v = (i+1);
+        string s = to_string(v);
+        if(v % 3 != 0 && s[sz(s)-1] != '3') a.PB(v);
+    }
 }
 
 int main() {
     fastIO();
 //    setIO();
+    fill();
     int t;
     cin >> t;
     while( t-- ) solve();

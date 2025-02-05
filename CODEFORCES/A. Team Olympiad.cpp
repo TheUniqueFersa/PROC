@@ -1,6 +1,7 @@
 /*
+    490/A
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:08:31 | 28/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,34 @@ void setIO() {
 }
 */
 void solve() {
+    vi p,m,pe;
+    int n, np=0, nm=0, npe=0;
+    cin >> n;
+    fori(i, 1, n+1){
+        int inc;
+        cin >> inc;
+        if(inc == 1){
+            np++;
+            p.PB(i);
+        } else if(inc == 2){
+            nm++;
+            m.PB(i);
+        } else {
+            npe++;
+            pe.PB(i);
+        }
+    }
+    int minn = min(np, min(nm, npe));
+    cout << minn << endl;
+    fori(i, 0, minn){
+        cout << p[i] << " " << m[i] << " " << pe[i] << endl;
+    }
 
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

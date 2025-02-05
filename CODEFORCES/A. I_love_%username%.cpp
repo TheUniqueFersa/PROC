@@ -1,6 +1,7 @@
 /*
+    A. I_love_%username%
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:07:53 | 10/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,30 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n;
+    cin >> n;
+    int min, max;
+    cin >> min;
+    max = min;
+    int coolness = 0;
+    fori(i, 0, n-1){
+        int inc;
+        cin >> inc;
+        if(inc < min){
+            min = inc;
+            coolness++;
+        } 
+        if(inc > max){
+            max = inc;
+            coolness++;
+        }
+    }
+    cout << coolness;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

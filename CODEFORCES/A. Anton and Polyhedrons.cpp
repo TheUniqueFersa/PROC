@@ -1,6 +1,7 @@
 /*
+    A. Anton and Polyhedrons
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:09:31 | 03/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,26 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n;
+    cin >> n;
+    map<string, int> m;
+    m["Tetrahedron"] = 4;
+    m["Cube"] = 6;
+    m["Octahedron"] = 8;
+    m["Dodecahedron"] = 12;
+    m["Icosahedron"] = 20;
+    int res = 0;
+    fori(i, 0, n){
+        string inc;
+        cin >> inc;
+        res+=m[inc];
+    }
+    cout << res << endl;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

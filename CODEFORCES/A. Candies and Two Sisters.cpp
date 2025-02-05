@@ -1,6 +1,7 @@
 /*
+    A. Candies and Two Sisters
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:06:41 | 07/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,7 +38,10 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n; 
+    cin >> n;
+    if(n%2 == 0) cout << n/2 - 1 << endl;
+    else cout << n/2 << endl;
 }
 
 int main() {

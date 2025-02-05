@@ -1,6 +1,7 @@
 /*
+    A. New Year and Hurry
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:07:36 | 09/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,23 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n, k;
+    cin>>n>>k;
+    int time = 0;
+    int res = 0;
+    fori(i, 1, n+1){
+        if(time + 5*i + k <= 240){
+            time += 5*i;
+            res++;
+        }
+        else break;
+    }
+    cout << res << endl;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

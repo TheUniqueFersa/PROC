@@ -1,6 +1,7 @@
 /*
+    432/A
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:09:37 | 26/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,20 @@ void setIO() {
 }
 */
 void solve() {
+    int n, k;
+    cin >> n >> k;
+    vi a(n); in(a);
+    sort(all(a));
+    int r = 5-k;
+    auto a_nearest = upper_bound(all(a), r);
+    int rr = a_nearest - a.begin();
+    cout << rr/3 << endl;
 
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }

@@ -1,6 +1,7 @@
 /*
+    472/A
  - theuniqueFersa: YI!!
-    timeToSolve | date
+    00:08:50 | 25/01/2025
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -37,14 +38,15 @@ void setIO() {
 }
 */
 void solve() {
-
+    int n;
+    cin >> n;
+    if(n%2==0) cout << n-4 <<  " " << 4 << endl;
+    else cout << 9 << " " << n-9 << endl;
 }
 
 int main() {
     fastIO();
 //    setIO();
-    int t;
-    cin >> t;
-    while( t-- ) solve();
+    solve();
     return 0;
 }
