@@ -33,31 +33,18 @@ void setIO() {
 }
 */
 void solve() {
-    int n, m, i=0, j=0;
-    cin >> n>>m;
-    vi a(n), b(m), c(m);
-    in(a); in(b);
-    /*
-    fori(j, 0, sz(b)-1){
-        while(i<sz(a) && a[i]<b[j]){
-            i++;
-        }
-        c[j] = i;
+    set<int> s;
+    int ans = 0;
+    fori(i, 0, 4){
+        int inc;
+        cin >> inc;
+        if(s.count(inc)) ans++;
+        s.insert(inc);
+        
     }
-    out(c);
-    */
-
-   //This implementation worked :)
-    while (i < a.size() || j < b.size())
-        if (j == b.size() || i < a.size() && a[i] < b[j]){
-            i++;
-        }
-        else{
-            c[j] = i;
-            j++;
-        }
-    out(c);
+    cout << ans;
 }
+
 int main() {
     fastIO();
 //    setIO();
