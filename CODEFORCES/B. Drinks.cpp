@@ -33,31 +33,19 @@ void setIO() {
 }
 */
 void solve() {
-    int n, m, i=0, j=0;
-    cin >> n>>m;
-    vi a(n), b(m), c(m);
-    in(a); in(b);
-    /*
-    fori(j, 0, sz(b)-1){
-        while(i<sz(a) && a[i]<b[j]){
-            i++;
-        }
-        c[j] = i;
+    int n;
+    double sum = 0.0;
+    cin >> n;
+    fori(i, 0, n){
+        int inc;
+        cin >> inc;
+        sum += (inc*(1.0/100.0));
     }
-    out(c);
-    */
-
-   //This implementation worked :)
-    while (i < a.size() || j < b.size())
-        if (j == b.size() || i < a.size() && a[i] < b[j]){
-            i++;
-        }
-        else{
-            c[j] = i;
-            j++;
-        }
-    out(c);
+    sum /= double(n);
+    sum *= 100.00;
+    cout << fixed << setprecision(10) << sum << endl;
 }
+
 int main() {
     fastIO();
 //    setIO();
