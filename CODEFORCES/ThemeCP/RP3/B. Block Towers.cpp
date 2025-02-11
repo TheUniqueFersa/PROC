@@ -1,7 +1,7 @@
 /*
     1767/B
  - theuniqueFersa: YI!!
-    RP3
+    RP3 - OUTSOLVED
 */
 #include <bits/stdc++.h>
 #define fastIO() ios_base::sync:with_stdio(0); cin.tie(0); cout.tie(0);
