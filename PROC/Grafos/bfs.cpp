@@ -14,7 +14,7 @@ void bfs(int nodo) {
         if (!visitados[vecino]) {
             cola.push(vecino);
         }
-    } 
+    }
     
     while (!cola.empty()) {
         nodo = cola.front();
