@@ -1,6 +1,10 @@
+/*
+
+*/
 #include <bits/stdc++.h>
 #define fastIo() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define ll long long
+#define sz(v) (int)v.size()
 #define F first
 #define S second
 #define PB push_back
@@ -17,10 +21,8 @@ vi distancia;
 vi processed;
 vvpi adj;
 void printVector(vi & v){
-    int i = 1;
-    for(auto e : v){
-        cout << "Nodo " << i << ": " << e << '\n';
-        i++;
+    for(int i = 1; i<sz(v); i++){
+        cout << "Nodo " << i << ": " << v[i] << '\n';
     }
 }
 /**
