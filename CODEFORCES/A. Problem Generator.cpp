@@ -1,4 +1,5 @@
 /*
+    https://codeforces.com/problemset/problem/1980/A
     O(n) ?
     < 23 | 26-09-2025
 */
