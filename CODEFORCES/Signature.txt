@@ -1,4 +1,9 @@
 /*
- - theuniqueFersa: YI!!
+    theuniqueFersa: YI!!
+    timeToSolve | date
+*/
+/*
+    
+    O(n): YI!!
     timeToSolve | date
 */
