@@ -1,3 +1,8 @@
+/*
+    https://codeforces.com/contest/2192/problem/A  
+    O(n): YI!!
+    < 120 | ?
+*/
 #include <iostream>
 #define endl '\n'
 
