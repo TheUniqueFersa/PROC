@@ -6,7 +6,7 @@
 #include <iostream>
 #define endl '\n'
 using namespace std;
-
+    
 void solve(){
     int x, x_0, d;
     string s;
